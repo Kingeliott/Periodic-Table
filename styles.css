@@ -1,0 +1,862 @@
+* {
+    background-image: linear-gradient(to bottom right, #0c271a, #A9C46C);
+}
+.anton-regular {
+    font-family: "Anton", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+ #titleBox {
+    backdrop-filter: blur(5px);
+    z-index: -1;
+ } 
+
+#title {
+    text-align: center;
+    background-color: transparent;
+    font-family: "Anton", serif ;
+    font-weight: 400;
+    z-index: 10;
+    color: beige;
+}
+
+.mainContainer {
+    display: grid;
+    grid-template-columns: repeat(18, 50px); /* 18 columns, each 50px wide */
+    gap: 3px; /* Reduce spacing */
+    width: max-content;
+    margin: auto;
+
+}
+
+.element {
+    color:beige;
+    width: 95%;
+    aspect-ratio: 1 / 1; /* Makes each element a square */
+    background-image: linear-gradient(to bottom right,#0c271a, #1c6406);
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin: auto;
+    position: relative;
+    transition: transform 0.1s ease-in-out;
+    overflow: hidden; /* Prevents smoke from expanding beyond the box */
+}
+
+.hydrogen {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    background-image: linear-gradient(to bottom right,#9500ff, #ffae00);
+
+}
+
+.helium {
+    grid-column: 18 / 19;
+    grid-row: 1 / 2;
+    background-image: linear-gradient(to bottom right,#c70000, #ff6200);
+
+}
+
+
+.lithium {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background-image: linear-gradient(to bottom right,#00c8ff, #04ff00);
+
+}
+
+.beryllium {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-image: linear-gradient(to bottom right,#e5ff00, #ffae00);
+
+}
+
+.boron {
+    grid-column: 13 / 14;
+    grid-row: 2 / 3;
+    background-image: linear-gradient(to bottom right,#502d02fa, #545a56);
+
+}
+.carbon{
+    grid-column: 14 / 15;
+    grid-row: 2 / 3;
+    background-image: linear-gradient(to bottom right,#9500ff, #ffae00);
+
+}
+
+.nitrogen {
+    grid-column: 15 / 16;
+    grid-row: 2 / 3;
+    background-image: linear-gradient(to bottom right,#9500ff, #ffae00);
+
+}
+
+.oxygen{
+    grid-column: 16/17;
+    grid-row: 2 / 3;
+    background-image: linear-gradient(to bottom right,#9500ff, #ffae00);
+
+}
+.fluorine{
+    grid-column: 17/18;
+    grid-row: 2 / 3;
+    background-image: linear-gradient(to bottom right,#9500ff, #ffae00);
+
+}
+.neon{
+    grid-column: 18/19;
+    grid-row: 2 / 3;
+    background-image: linear-gradient(to bottom right,#c70000, #ff6200);
+
+}
+
+.sodium {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    background-image: linear-gradient(to bottom right,#00c8ff, #04ff00);
+
+}
+
+.magnesium {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    background-image: linear-gradient(to bottom right,#e5ff00, #ffae00);
+
+}
+
+.aluminium {
+    grid-column: 13 / 14;
+    grid-row: 3 / 4;
+    background-image: linear-gradient(to bottom right,#a50138fa, #0947ff);
+
+}
+.silicon{
+    grid-column: 14 / 15;
+    grid-row: 3 / 4;
+    background-image: linear-gradient(to bottom right,#502d02fa, #545a56);
+
+}
+
+.phosphorus {
+    grid-column: 15 / 16;
+    grid-row: 3 / 4;
+    background-image: linear-gradient(to bottom right,#9500ff, #ffae00);
+
+}
+
+.sulfur{
+    grid-column: 16/17;
+    grid-row: 3 / 4;
+    background-image: linear-gradient(to bottom right,#9500ff, #ffae00);
+
+}
+.chlorine{
+    grid-column: 17/18;
+    grid-row: 3 / 4;
+    background-image: linear-gradient(to bottom right,#9500ff, #ffae00);
+
+}
+.argon{
+    grid-column: 18/19;
+    grid-row: 3 / 4;
+    background-image: linear-gradient(to bottom right,#c70000, #ff6200);
+
+}
+.potassium{
+    grid-column: 1/2;
+    grid-row: 4 / 5;
+    background-image: linear-gradient(to bottom right,#00c8ff, #04ff00);
+
+}
+.calcium{
+    grid-column: 2/3;
+    grid-row: 4 / 5;
+    background-image: linear-gradient(to bottom right,#e5ff00, #ffae00);
+
+}
+.scandium{
+    grid-column: 3/4;
+    grid-row: 4 / 5;
+}
+.titanium{
+    grid-column: 4/5;
+    grid-row: 4 / 5;
+}
+.vanadium{
+    grid-column: 5/6;
+    grid-row: 4 / 5;
+}
+.chromium{
+    grid-column: 6/7;
+    grid-row: 4 / 5;
+}
+.manganese{
+    grid-column: 7/8;
+    grid-row: 4 / 5;
+}
+.iron{
+    grid-column: 8/9;
+    grid-row: 4 / 5;
+}
+.cobalt{
+    grid-column: 9/10;
+    grid-row: 4 / 5;
+}
+.nickel{
+    grid-column: 10/11;
+    grid-row: 4 / 5;
+}
+.copper{
+    grid-column: 11/12;
+    grid-row: 4 / 5;
+}
+.zinc{
+    grid-column: 12/13;
+    grid-row: 4 / 5;
+}
+.gallium{
+    grid-column: 13/14;
+    grid-row: 4 / 5;
+    background-image: linear-gradient(to bottom right,#a50138fa, #0947ff);
+
+}
+.germanium{
+    grid-column: 14/15;
+    grid-row: 4 / 5;
+    background-image: linear-gradient(to bottom right,#502d02fa, #545a56);
+
+}
+.arsenic{
+    grid-column: 15/16;
+    grid-row: 4 / 5;
+    background-image: linear-gradient(to bottom right,#502d02fa, #545a56);
+
+}
+.selenium{
+    grid-column: 16/17;
+    grid-row: 4 / 5;
+    background-image: linear-gradient(to bottom right,#9500ff, #ffae00);
+
+}
+.bromine{
+    grid-column: 17/18;
+    grid-row: 4 / 5;
+    background-image: linear-gradient(to bottom right,#9500ff, #ffae00);
+
+}
+.krypton{
+    grid-column: 18/19;
+    grid-row: 4 / 5;
+    background-image: linear-gradient(to bottom right,#c70000, #ff6200);
+
+}
+.rubidium{
+    grid-column: 1/2;
+    grid-row: 5 / 6;
+    background-image: linear-gradient(to bottom right,#00c8ff, #04ff00);
+
+}
+.strontium{
+    grid-column: 2/3;
+    grid-row: 5 / 6;
+    background-image: linear-gradient(to bottom right,#e5ff00, #ffae00);
+
+}
+.yttrium{
+    grid-column: 3/4;
+    grid-row: 5 / 6;
+}
+.zirconium{
+    grid-column: 4/5;
+    grid-row: 5 / 6;
+}
+.niobium{
+    grid-column: 5/6;
+    grid-row: 5 / 6;
+}
+.molybdenum{
+    grid-column: 6/7;
+    grid-row: 5 / 6;
+}
+.technetium{
+    grid-column: 7/8;
+    grid-row: 5 / 6;
+}
+.ruthenium{
+    grid-column: 8/9;
+    grid-row: 5 / 6;
+}
+.rhodium{
+    grid-column: 9/10;
+    grid-row: 5 / 6;
+}
+.palladium{
+    grid-column: 10/11;
+    grid-row: 5 / 6;
+}
+.silver{
+    grid-column: 11/12;
+    grid-row: 5 / 6;
+}
+.cadmium{
+    grid-column: 12/13;
+    grid-row: 5 / 6;
+}
+.indium{
+    grid-column: 13/14;
+    grid-row: 5 / 6;
+    background-image: linear-gradient(to bottom right,#a50138fa, #0947ff);
+
+}
+.tin{
+    grid-column: 14/15;
+    grid-row: 5 / 6;
+    background-image: linear-gradient(to bottom right,#a50138fa, #0947ff);
+
+}
+.antimony{
+    grid-column: 15/16;
+    grid-row: 5 / 6;
+    background-image: linear-gradient(to bottom right,#502d02fa, #545a56);
+
+}
+.tellurium{
+    grid-column: 16/17;
+    grid-row: 5 / 6;
+    background-image: linear-gradient(to bottom right,#502d02fa, #545a56);
+
+}
+.iodine{
+    grid-column: 17/18;
+    grid-row: 5 / 6;
+    background-image: linear-gradient(to bottom right,#9500ff, #ffae00);
+
+}
+.xenon{
+    grid-column: 18/19;
+    grid-row: 5 / 6;
+    background-image: linear-gradient(to bottom right,#c70000, #ff6200);
+
+}
+.caesium{
+    grid-column: 1/2;
+    grid-row: 6 / 7;
+    background-image: linear-gradient(to bottom right,#00c8ff, #04ff00);
+
+}
+.barium{
+    grid-column: 2/3;
+    grid-row: 6 / 7;
+    background-image: linear-gradient(to bottom right,#e5ff00, #ffae00);
+
+}
+.lanthanum{
+    grid-column: 3/4;
+    grid-row: 6 / 7;
+    background-image: linear-gradient(to bottom right,#0a00c7, #003cff);
+
+}
+.hafnium{
+    grid-column: 4/5;
+    grid-row: 6 / 7;
+}
+.tantalum{
+    grid-column: 5/6;
+    grid-row: 6 / 7;
+}
+.tungsten{
+    grid-column: 6/7;
+    grid-row: 6 / 7;
+}
+.rhenium{
+    grid-column: 7/8;
+    grid-row: 6 / 7;
+}
+.osmium{
+    grid-column: 8/9;
+    grid-row: 6 / 7;
+}
+.iridium{
+    grid-column: 9/10;
+    grid-row: 6 / 7;
+}
+.platinum{
+    grid-column: 10/11;
+    grid-row: 6 / 7;
+}
+.gold{
+    grid-column: 11/12;
+    grid-row: 6 / 7;
+}
+.mercury{
+    grid-column: 12/13;
+    grid-row: 6 / 7;
+}
+.thallium{
+    grid-column: 13/14;
+    grid-row: 6 / 7;
+    background-image: linear-gradient(to bottom right,#a50138fa, #0947ff);
+
+}
+.lead{
+    grid-column: 14/15;
+    grid-row: 6 / 7;
+    background-image: linear-gradient(to bottom right,#a50138fa, #0947ff);
+
+}
+.bismuth{
+    grid-column: 15/16;
+    grid-row: 6 / 7;
+    background-image: linear-gradient(to bottom right,#a50138fa, #0947ff);
+
+}
+.polonium{
+    grid-column: 16/17;
+    grid-row: 6 / 7;
+    background-image: linear-gradient(to bottom right,#a50138fa, #0947ff);
+
+}
+.astatine{
+    grid-column: 17/18;
+    grid-row: 6 / 7;
+    background-image: linear-gradient(to bottom right,#a50138fa, #0947ff);
+
+}
+.radon{
+    grid-column: 18/19;
+    grid-row: 6 / 7;
+    background-image: linear-gradient(to bottom right,#c70000, #ff6200);
+
+}
+.francium{
+    grid-column: 1/2;
+    grid-row: 7 / 8;
+    background-image: linear-gradient(to bottom right,#00c8ff, #04ff00);
+
+}
+.radium{
+    grid-column: 2/3;
+    grid-row: 7 / 8;
+    background-image: linear-gradient(to bottom right,#e5ff00, #ffae00);
+
+}
+.actinium{
+    grid-column: 3/4;
+    grid-row: 7 / 8;
+    background-image: linear-gradient(to bottom right,#c700ac, #ff00a6);
+
+}
+.rutherfordium{
+    grid-column: 4/5;
+    grid-row: 7 / 8;
+    
+}
+.dubnium{
+    grid-column: 5/6;
+    grid-row: 7 / 8;
+}
+.seaborgium{
+    grid-column: 6/7;
+    grid-row: 7/ 8;
+}
+.bohrium{
+    grid-column: 7/8;
+    grid-row: 7 / 8;
+}
+.hassium{
+    grid-column: 8/9;
+    grid-row: 7 / 8;
+}
+.meitnerium{
+    grid-column: 9/10;
+    grid-row: 7/ 8;
+    background-image: linear-gradient(to bottom right,#525252, #101010);
+
+}
+.darmstadtium{
+    grid-column: 10/11;
+    grid-row: 7 / 8;
+    background-image: linear-gradient(to bottom right,#525252, #101010);
+    
+}
+.roentgenium{
+    grid-column: 11/12;
+    grid-row: 7/ 8;
+    background-image: linear-gradient(to bottom right,#525252, #101010);
+
+}
+.copernicium{
+    grid-column: 12/13;
+    grid-row: 7 / 8;
+    background-image: linear-gradient(to bottom right,#525252, #101010);
+
+}
+.nihonium{
+    grid-column: 13/14;
+    grid-row: 7 / 8;
+    background-image: linear-gradient(to bottom right,#525252, #101010);
+
+}
+.flerovium{
+    grid-column: 14/15;
+    grid-row: 7 / 8;
+    background-image: linear-gradient(to bottom right,#525252, #101010);
+
+}
+.moscovium{
+    grid-column: 15/16;
+    grid-row: 7 / 8;
+    background-image: linear-gradient(to bottom right,#525252, #101010);
+
+}
+.livermorium{
+    grid-column: 16/17;
+    grid-row: 7 / 8;
+    background-image: linear-gradient(to bottom right,#525252, #101010);
+
+}
+.tennessine{
+    grid-column: 17/18;
+    grid-row: 7 / 8;
+    background-image: linear-gradient(to bottom right,#525252, #101010);
+
+}
+.oganesson{
+    grid-column: 18/19;
+    grid-row: 7 / 8;
+    background-image: linear-gradient(to bottom right,#525252, #101010);
+
+}
+
+.cerium{
+    grid-column: 4/5;
+    grid-row: 8 / 9;
+    background-image: linear-gradient(to bottom right,#0a00c7, #003cff);
+
+}
+.praseodymium{
+    grid-column: 5/6;
+    grid-row: 8 / 9;
+    background-image: linear-gradient(to bottom right,#0a00c7, #003cff);
+
+}
+.neodymium{
+    grid-column: 6/7;
+    grid-row: 8 / 9;
+    background-image: linear-gradient(to bottom right,#0a00c7, #003cff);
+
+}
+.promethium{
+    grid-column: 7/8;
+    grid-row: 8 / 9;
+    background-image: linear-gradient(to bottom right,#0a00c7, #003cff);
+
+}
+.samarium{
+    grid-column: 8/9;
+    grid-row: 8 / 9;
+    background-image: linear-gradient(to bottom right,#0a00c7, #003cff);
+
+}
+.europium{
+    grid-column: 9/10;
+    grid-row: 8 / 9;
+    background-image: linear-gradient(to bottom right,#0a00c7, #003cff);
+
+}
+.gadolinium{
+    grid-column: 10/11;
+    grid-row: 8 / 9;
+    background-image: linear-gradient(to bottom right,#0a00c7, #003cff);
+
+}
+.terbium{
+    grid-column: 11/12;
+    grid-row: 8 / 9;
+    background-image: linear-gradient(to bottom right,#0a00c7, #003cff);
+
+}
+.dysprosium{
+    grid-column: 12/13;
+    grid-row: 8 / 9;
+    background-image: linear-gradient(to bottom right,#0a00c7, #003cff);
+
+}
+.holmium{
+    grid-column: 13/14;
+    grid-row: 8 / 9;
+    background-image: linear-gradient(to bottom right,#0a00c7, #003cff);
+
+}
+.erbium{
+    grid-column: 14/15;
+    grid-row: 8 / 9;
+    background-image: linear-gradient(to bottom right,#0a00c7, #003cff);
+
+}
+.thulium{
+    grid-column: 15/16;
+    grid-row: 8 / 9;
+    background-image: linear-gradient(to bottom right,#0a00c7, #003cff);
+
+}
+.ytterbium{
+    grid-column: 16/17;
+    grid-row: 8 / 9;
+    background-image: linear-gradient(to bottom right,#0a00c7, #003cff);
+
+}
+.lutetium{
+    grid-column: 17/18;
+    grid-row: 8 / 9;
+    background-image: linear-gradient(to bottom right,#0a00c7, #003cff);
+
+}
+.thorium{
+    grid-column: 4/5;
+    grid-row: 9/ 10;
+    background-image: linear-gradient(to bottom right,#c700ac, #ff00a6);
+
+}
+.protactinium{
+    grid-column: 5/6;
+    grid-row: 9/ 10;
+    background-image: linear-gradient(to bottom right,#c700ac, #ff00a6);
+
+}
+.uranium{
+    grid-column: 6/7;
+    grid-row: 9/ 10;
+    background-image: linear-gradient(to bottom right,#c700ac, #ff00a6);
+
+}
+.neptunium{
+    grid-column: 7/8;
+    grid-row: 9/ 10;
+    background-image: linear-gradient(to bottom right,#c700ac, #ff00a6);
+
+}
+.plutonium{
+    grid-column: 8/9;
+    grid-row: 9/ 10;
+    background-image: linear-gradient(to bottom right,#c700ac, #ff00a6);
+
+}
+.americium{
+    grid-column: 9/10;
+    grid-row: 9/ 10;
+    background-image: linear-gradient(to bottom right,#c700ac, #ff00a6);
+
+}
+.curium{
+    grid-column: 10/11;
+    grid-row: 9/ 10;
+    background-image: linear-gradient(to bottom right,#c700ac, #ff00a6);
+
+}
+.berkelium{
+    grid-column: 11/12;
+    grid-row: 9/ 10;
+    background-image: linear-gradient(to bottom right,#c700ac, #ff00a6);
+
+}
+.californium{
+    grid-column: 12/13;
+    grid-row: 9/ 10;
+    background-image: linear-gradient(to bottom right,#c700ac, #ff00a6);
+
+}
+.einsteinium{
+    grid-column: 13/14;
+    grid-row: 9/ 10;
+    background-image: linear-gradient(to bottom right,#c700ac, #ff00a6);
+
+}
+.fermium{
+    grid-column: 14/15;
+    grid-row: 9/ 10;
+    background-image: linear-gradient(to bottom right,#c700ac, #ff00a6);
+
+}
+.mendelevium{
+    grid-column: 15/16;
+    grid-row: 9/ 10;
+    background-image: linear-gradient(to bottom right,#c700ac, #ff00a6);
+
+}
+.nobelium{
+    grid-column: 16/17;
+    grid-row: 9/ 10;
+    background-image: linear-gradient(to bottom right,#c700ac, #ff00a6);
+
+}
+.lawrencium{
+    grid-column: 17/18;
+    grid-row: 9/ 10;
+    background-image: linear-gradient(to bottom right,#c700ac, #ff00a6);
+
+}
+
+.element:hover {
+    transform: scale(2);
+    background-color: dodgerblue;
+    z-index: 10;
+
+   
+
+  }
+
+  
+
+  .nobleGas::before, .nobleGas::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle, rgba(255,255,255,0.5) 10%, rgba(255,255,255,0) 60%);
+    opacity: 0;
+    border-radius: 50%;
+    transform: scale(0.5);
+    transition: opacity 0.4s ease-out, transform 1s ease-out;
+  }
+
+  .nobleGas::before {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  
+  .nobleGas::after {
+    top: 60%;
+    left: 55%;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+
+  .nobleGas:hover::before,
+.nobleGas:hover::after {
+  opacity: 1;
+  transform: translate(-50%, -70%) scale(1.5);
+  transition: opacity 0.3s infinite ease-in, transform 1s infinite ease-out;
+}
+
+.mercury::before, .mercury::after {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(255,255,255,0.2) 10%, rgba(255, 255, 255, 0.555) 60%);
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0) scale(1);
+    border-radius: 50%;
+    opacity: 0.6;
+    transition: transform 5s ease-out, opacity 5s ease-out;
+  }
+  
+  .mercury:hover::before {
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 0.3;
+  }
+  
+  .mercury:hover::after {
+    transform: translate(-50%, -70%) scale(1.2);
+    opacity: 0.1;
+  }
+  .mercury::before {
+    animation-delay: 0s;
+  }
+  
+  .mercury::after {
+    animation-delay: 0.2s;
+  }
+  @keyframes liquid {
+    0% { transform: translate(-50%, 100%) scale(1); opacity: 0.6; }
+    50% { transform: translate(-50%, -50%) scale(1.5); opacity: 0.3; }
+    100% { transform: translate(-50%, -70%) scale(2); opacity: 0; }
+  }
+  
+  .mercury:hover::before, 
+  .mercury:hover::after {
+    animation: liquid 4s infinite ease-out forwards;
+  }
+
+  
+.bromine::before, .bromine::after {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(255,255,255,0.2) 10%, rgba(255, 255, 255, 0.555) 60%);
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0) scale(1);
+    border-radius: 50%;
+    opacity: 0.6;
+    transition: transform 5s ease-out, opacity 5s ease-out;
+  }
+  
+  .bromine:hover::before {
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 0.3;
+  }
+  
+  .bromine:hover::after {
+    transform: translate(-50%, -70%) scale(1.2);
+    opacity: 0.1;
+  }
+  .bromine::before {
+    animation-delay: 0s;
+  }
+  
+  .bromine::after {
+    animation-delay: 0.2s;
+  }
+  @keyframes liquid {
+    0% { transform: translate(-50%, 100%) scale(1); opacity: 0.6; }
+    50% { transform: translate(-50%, -50%) scale(1.5); opacity: 0.3; }
+    100% { transform: translate(-50%, -70%) scale(2); opacity: 0; }
+  }
+  
+  .bromine:hover::before, 
+  .bromine:hover::after {
+    animation: liquid 4s infinite ease-out forwards;
+  }
+
+  @keyframes shake {
+    0% { transform: scale(1.1) rotate(0deg) translateX(0); }
+    25% { transform: scale(1.1) rotate(1deg) translateX(-2px); }
+    50% { transform: scale(1.1) rotate(-1deg) translateX(2px); }
+    75% { transform: scale(1.1) rotate(1deg) translateX(-2px); }
+    100% { transform: scale(1.1) rotate(0deg) translateX(0); }
+  }
+
+ /* Hide the .extra-text initially */
+/* Hide the .extra-text initially */
+.extra-text {
+    display: none;  /* Still hide the element */
+    position: absolute; /* Position it above the element */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);  /* Initial scale set to 0 for effect */
+    color: beige; /* Adjust the color for readability */
+    background-color: transparent !important;
+    font-size: 7.8px; /* Adjust size */
+    padding: 5px;
+    border-radius: 0px;
+    z-index: 10;
+    text-align: center;
+    opacity: 0;  /* Initially hidden */
+    transition: opacity 2s ease, transform 1s ease; /* Apply fade-in and scaling transition */
+  }
+  
+  /* Show .extra-text when the element is hovered */
+  .element:hover .extra-text {
+    display: block;  /* Make it visible */
+    opacity: 1;      /* Fade in */
+    transform: translate(-50%, -50%) scale(1);  /* Scale back to full size */
+  }
+  
